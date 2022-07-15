@@ -31,8 +31,7 @@ async function createDirectory({ outputDirectoryPath }) {
 
 async function exportFile({ drive, fileId }) {
   const response = await drive.files.export({
-    fileId,
-    mimeType: "text/html",
+    fileId
   });
   return response.data;
 }
